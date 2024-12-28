@@ -1,0 +1,15 @@
+{
+ "name": "cineflix-json-server",
+ "version": "1.0.0",
+ "description": "Servidor JSON para gerenciar os vídeos do projeto Cineflix História",
+ "main": "server.js",
+  "scripts": {
+   "start": "json-server --watch db.json --port 3001"
+ },
+ "keywords": ["json-server", "cineflix", "história", "api"],
+ "author": "Thiago",
+ "license": "ISC",
+ "dependencies": {
+   "json-server": "^0.17.3"
+ }
+}

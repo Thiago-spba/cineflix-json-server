@@ -1,0 +1,19 @@
+{
+ "videos": [
+   {
+     "id": 1,
+     "title": "História de São Paulo",
+     "url": "https://www.youtube.com/watch?v=example1"
+   },
+   {
+     "id": 2,
+     "title": "Como Era A Terra Antes Dos Dinossauros",
+     "url": "https://www.youtube.com/watch?v=example2"
+   },
+   {
+     "id": 3,
+     "title": "PINZÓN DESCOBRIU, MAS NÃO LEVOU",
+     "url": "https://www.youtube.com/watch?v=example3"
+   }
+ ]
+}
