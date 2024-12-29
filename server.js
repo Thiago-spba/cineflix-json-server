@@ -4,11 +4,18 @@ const server = jsonServer.create();
 const router = jsonServer.router('db.json');
 const middlewares = jsonServer.defaults();
 
-server.use(cors()); // Ativar CORS para permitir requisições de outros domínios
+// Configuração adicional de CORS
+const corsOptions = {
+  origin: '*', // Permitir requisições de qualquer origem
+  methods: ['GET', 'POST', 'PUT', 'DELETE'], // Métodos permitidos
+  allowedHeaders: ['Content-Type', 'Authorization'], // Cabeçalhos permitidos
+};
+server.use(cors(corsOptions)); // Ativar CORS com opções personalizadas
+
 server.use(middlewares);
 server.use(router);
 
-// Corrigir para usar a porta definida pelo Render ou a padrão 3000
+// Porta definida pelo Render ou padrão 3000
 const PORT = process.env.PORT || 3000;
 
 server.listen(PORT, () => {
