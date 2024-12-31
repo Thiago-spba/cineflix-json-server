@@ -3,7 +3,7 @@ services:
     name: cineflix-json-server
     env: node
     buildCommand: ""
-    startCommand: json-server --watch db.json --port $PORT
+    startCommand: json-server --watch db.json --port 8080
     envVars:
       - key: NODE_ENV
         value: production
