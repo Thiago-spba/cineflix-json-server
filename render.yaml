@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: cineflix-json-server
+    env: node
+    buildCommand: ""
+    startCommand: json-server --watch db.json --port 3001
+    envVars:
+      - key: NODE_ENV
+        value: production
