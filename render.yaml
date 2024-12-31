@@ -2,8 +2,8 @@ services:
   - type: web
     name: cineflix-json-server
     env: node
-    buildCommand: ""
-    startCommand: json-server --watch db.json --host 0.0.0.0 --port $PORT
+    buildCommand: "npm install"
+    startCommand: "npx json-server --watch db.json --host 0.0.0.0 --port $PORT"
     envVars:
       - key: NODE_ENV
         value: production
